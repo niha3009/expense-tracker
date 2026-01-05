@@ -1,0 +1,59 @@
+package com.example;
+
+import java.sql.Date;
+
+public class Expense {
+
+    private int id;
+    private String title;
+    private double amount;
+    private String category;
+    private Date expenseDate;
+
+    // Empty constructor
+    public Expense() {}
+
+    // Constructor for adding expense
+    public Expense(String title, double amount, String category, Date expenseDate) {
+        this.title = title;
+        this.amount = amount;
+        this.category = category;
+        this.expenseDate = expenseDate;
+    }
+
+    // Getters & Setters
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public Date getExpenseDate() {
+        return expenseDate;
+    }
+    public void setExpenseDate(Date expenseDate) {
+        this.expenseDate = expenseDate;
+    }
+}
